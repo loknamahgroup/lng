@@ -1,286 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>LNG</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
-         rel="stylesheet">
-      <link rel="stylesheet" href="index.css" />
-   </head>
-   <body>
-      <!-- Header -->
-      <header id="header">
-         <div class="container header-container">
-            <div class="logo-container">
-               <a href="/index.html" class="logo">
-               <img src="./assets/logo.png" alt="Bathware Solutions Logo">
-               </a>
-               <!-- <div class="company-name">Lok Namah Group</div> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bathware Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css"/>
+   
+</head>
+<body>
+    <!-- Content will go here -->
+    <header class="header">
+        <div class="top-bar" id="#home">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +1 234 567 890</span>
+                    <span><i class="fas fa-envelope"></i> info@yourbrand.com</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-            <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-               <ul class="nav-menu" id="navMenu">
-                  <li><a href="#header">Home</a></li>
-                  <li class="dropdown">
-                     <a href="#about">About </i></a>
-                     <!-- <ul class="dropdown-menu">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        </ul> -->
-                  </li>
-                  <li class="dropdown">
-                     <a href="#products">Products <i class="fas fa-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="./products/sanitary/sanitary.html">Sanitary</a></li>
-                        <li><a href="./products/accessories/accessories.html">Bath Accessories</a></li>
-                        <li><a href="./products/shower/shower.html">Shower</a></li>
-                     </ul>
-                  </li>
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#contact">Contact</a></li>
-               </ul>
-            </nav>
-         </div>
-      </header>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-         <div class="container hero-content">
-            <h1>Premium Sanitaryware for Modern Living</h1>
-            <p>Discover our exquisite collection of bathroom solutions that combine elegance, functionality and
-               durability for your perfect bathroom experience.
-            </p>
-            <div class="hero-btns">
-               <a href="#products" class="btn">Explore Products</a>
-               <a href="#contact" class="btn btn-accent">Contact Us</a>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="./assets/logo.png" alt="Your Brand Logo">
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#product-ranges">Products</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
             </div>
-         </div>
-      </section>
-      <!-- About Section -->
-      <section class="section about" id="about">
-         <div class="container">
-            <h2 class="section-title">About Us</h2>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="./assets/1.png" alt="Luxury Bathware">
+                <div class="slide-content">
+                    <h1>Refined Living Essentials</h1>
+                    <p>Premium Quality. Timeless Design. Trusted Craftsmanship</p>
+                    <a href="#" class="btn">Explore Collections</a>
+                </div>
+            </div>
+            <!-- Additional slides would go here -->
+        </div>
+    </section>
+
+    <section id="product-ranges" class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Our Product Range</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="assets/tap.png" alt="Showers">
+                    <h3>Showers</h3>
+                    <a href="#" class="btn btn-view-all">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/tap.png" alt="Showers">
+                    <h3>Showers</h3>
+                    <a href="#" class="btn btn-view-all">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/tap.png" alt="Showers">
+                    <h3>Showers</h3>
+                    <a href="#" class="btn btn-view-all">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/tap.png" alt="Showers">
+                    <h3>Showers</h3>
+                    <a href="#" class="btn btn-view-all">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-collections">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="assets/c1.png" alt="Modern Elegance">
+                    <div class="collection-info">
+                        <h3>Modern Elegance</h3>
+                        <p>Sleek designs for contemporary bathrooms</p>
+                        <a href="#" class="btn">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="assets/c2.png" alt="Classic Luxury">
+                    <div class="collection-info">
+                        <h3>Classic Luxury</h3>
+                        <p>Timeless designs with premium finishes</p>
+                        <a href="#" class="btn">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
             <div class="about-content">
-               <div class="about-img">
-                  <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                     alt="About Bathware Solutions">
-               </div>
-               <div class="about-text">
-                  <h2>About Lok Namah Group Pvt. Ltd.</h2>
-                  <p>With over 25 years of industry experience, Lok Namah Group Pvt. Ltd. was founded by an
-                     entrepreneur - <b>Lokesh Gupta</b>, who has worked at the ground level and truly understands
-                     customer needs. Built on years of knowledge and hands-on expertise, we launched our own brand to
-                     deliver high-quality sanitaryware, bathware, tiles, kitchen sinks, faucets, and allied products.
-                  </p>
-                  <p>We focus on superior design, lasting quality, and customer satisfaction. Every product reflects
-                     our passion for excellence and our goal to enhance everyday living. At Lok Namah, we don’t just
-                     meet expectations—we aim to exceed them.
-                  </p>
-                  <a href="#products" class="btn">View Our Products</a>
-               </div>
+                <h2 class="section-title">About Our Brand</h2>
+                <p>With over 50 years of experience in the bathware industry, we bring you premium quality products that combine functionality with elegant design. Our commitment to innovation and quality has made us a leader in the bathware sector.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h4>Premium Quality</h4>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovative Designs</h4>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-globe"></i>
+                        <h4>Global Standards</h4>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn More</a>
             </div>
-         </div>
-      </section>
-      <section class="section-product products" id="products">
-         <div class="container-product">
-            <h2 class="section-title">Our Products</h2>
-            <div class="products-grid">
-               <!-- Product 1 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/faussets.png" alt="Faucet">
-                  </div>
-                  <div class="product-info">
-                     <h3>Faucets</h3>
-                     <a href="#" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 2 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/k-sink.jpeg" alt="Kitchen Sink">
-                  </div>
-                  <div class="product-info">
-                     <h3>Kitchen Sink</h3>
-                     <a href="#" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 3 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/sanitary.jpeg" alt="Sanitary">
-                  </div>
-                  <div class="product-info">
-                     <h3>Sanitary</h3>
-                     <a href="./products/sanitary/sanitary.html" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 4 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/sw.jpeg" alt="Shower">
-                  </div>
-                  <div class="product-info">
-                     <h3>Shower</h3>
-                     <a href="./products/shower/shower.html" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 5 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/b-a.jpeg" alt="Bath Accessories">
-                  </div>
-                  <div class="product-info">
-                     <h3>Bath Accessories</h3>
-                     <a href="./products/accessories/accessories.html" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 6 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/allied.jpeg" alt="Allied">
-                  </div>
-                  <div class="product-info">
-                     <h3>Allied</h3>
-                     <a href="#" class="btn">View Details</a>
-                  </div>
-               </div>
-               <!-- Product 7 -->
-               <div class="product-card">
-                  <div class="product-img">
-                     <img src="./assets/vanity.jpeg" alt="Vanity and Cabinet Basin">
-                  </div>
-                  <div class="product-info">
-                     <h3>Cabinate and Vanity Basin</h3>
-                     <a href="#" class="btn">View Details</a>
-                  </div>
-               </div>
+            <div class="about-image">
+                <img src="about-image.jpg" alt="About Our Company">
             </div>
-         </div>
-      </section>
-      <!-- Features Section -->
-      <section class="section features" id="features">
-         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <div class="features-container">
-               <!-- Feature 1 -->
-               <div class="feature-card">
-                  <div class="feature-icon">
-                     <i class="fas fa-award"></i>
-                  </div>
-                  <h3>Premium Quality</h3>
-                  <p>Our products undergo rigorous quality checks to ensure durability, functionality and aesthetic
-                     appeal that lasts for years.
-                  </p>
-               </div>
-               <!-- Feature 2 -->
-               <div class="feature-card">
-                  <div class="feature-icon">
-                     <i class="fas fa-leaf"></i>
-                  </div>
-                  <h3>Eco-Friendly</h3>
-                  <p>We prioritize water conservation and sustainable manufacturing processes to minimize
-                     environmental impact.
-                  </p>
-               </div>
-               <!-- Feature 3 -->
-               <div class="feature-card">
-                  <div class="feature-icon">
-                     <i class="fas fa-tools"></i>
-                  </div>
-                  <h3>Innovative Designs</h3>
-                  <p>Our R&D team continuously develops innovative designs that combine style with practical
-                     functionality.
-                  </p>
-               </div>
-               <!-- Feature 4 -->
-               <!-- <div class="feature-card">
-                  <div class="feature-icon">
-                      <i class="fas fa-headset"></i>
-                  </div>
-                  <h3>Customer Support</h3>
-                  <p>Our dedicated support team is always ready to assist you with product selection, installation and
-                      after-sales service.</p>
-                  </div> -->
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="quote">"The quality and finish of the products exceeded my expectations. Truly premium bathware."</div>
+                    <div class="author">
+                        <img src="customer1.jpg" alt="Customer">
+                        <h4>Sarah Johnson</h4>
+                        <p>Homeowner</p>
+                    </div>
+                </div>
+                <!-- Additional testimonials would go here -->
             </div>
-         </div>
-      </section>
-      <!-- Product Details Page -->
-      <section class="product-details" id="productDetails" style="display: none;">
-      </section>
-      </div>
-      </div>
-      </div>
-      </section>
-      <section>
-         <div class="video-container">
-            <div class="player-wrapper">
-               <iframe id="youtube-iframe" src="https://www.youtube.com/embed/-qGl42kohoA?si=Y-ZVBhd0LWb1_cgc"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <img src="logo-white.png" alt="Logo" class="footer-logo">
+                    <p>Premium bathware solutions for residential and commercial spaces.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Showers</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Launches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@yourbrand.com</li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </section>
-      <!-- Footer -->
-      <footer>
-         <div id="contact" class="container">
-            <div class="footer-container">
-               <div class="footer-col">
-                  <h3>About Us</h3>
-                  <p>With 25 years of experience, we deliver trusted sanitary and bathware products that combine
-                     quality, design, and reliability.
-                  </p>
-                  <!-- <div class="social-links">
-                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#"><i class="fab fa-twitter"></i></a>
-                     <a href="#"><i class="fab fa-instagram"></i></a>
-                     </div> -->
-               </div>
-               <div class="footer-col">
-                  <h3>Quick Links</h3>
-                  <ul class="footer-links">
-                     <li><a href="#home">Home</a></li>
-                     <li><a href="#about">About Us</a></li>
-                     <li><a href="#products">Products</a></li>
-                     <li><a href="#features">Features</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                  </ul>
-               </div>
-               <div class="footer-col">
-                  <h3>Products</h3>
-                  <ul class="footer-links">
-                     <li><a href="./products/faucets/faucets.html" class="wash-basins-link">Faucets</a></li>
-                  </ul>
-               </div>
-               <div class="footer-col">
-                  <h3>Contact Info</h3>
-                  <p><i class="fas fa-map-marker-alt"></i> H No. 283, Bokajan Thana Road, Bokajan, Karbi Anglong,
-                     Assam - 782480
-                  </p>
-                  <p><i class="fas fa-phone"></i> +91 9436000003</p>
-                  <p><i class="fas fa-envelope"></i> loknamahgroup@gmail.com</p>
-               </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Your Bathware Brand. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
             </div>
-            <div class="footer-bottom">
-               <p>&copy; 2025 LOK NAMAH GROUP PVT. LMT. All Rights Reserved.</p>
-            </div>
-         </div>
-      </footer>
-      <!-- Back to Top Button -->
-      <a href="#header" class="back-to-top" id="backToTop">
-      <i class="fas fa-arrow-up"></i>
-      </a>
-      <!-- JavaScript -->
-      <script src="index.js"></script>
-      <script src="https://www.youtube.com/iframe_api"></script>
-   </body>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
 </html>
