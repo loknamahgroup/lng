@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
             productCard.innerHTML = `
                 <div class="product-image-slider">
                     <div class="slider-container" id="slider-${product.id}">
-                        ${product.images.map(img => `<img src="./assets/${img}" alt="${product.name}" class="slider-image">`).join('')}
+                        ${product.images.map(img => `<img loading="lazy" src="./assets/${img}" alt="${product.name}"  class="slider-image">`).join('')}
                     </div>
                     <div class="slider-nav" id="slider-nav-${product.id}">
                         ${product.images.map((_, index) => `<div class="slider-dot ${index === 0 ? 'active' : ''}" data-index="${index}"></div>`).join('')}
