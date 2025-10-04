@@ -38,34 +38,30 @@
 
 </head>
 <body>
-    <!-- Header -->
     <header id="header">
         <div class="container header-container">
             <div class="logo-container">
                 <a href="../../index.html" class="logo">
-                    <img loading="lazy" src="../../assets/lng-sanitary-loknamahgroup-product-logo-min.png" alt="LNG Sanitary & Bathware Solutions Logo">
+                    <img loading="lazy" src="../../assets/lng-sanitary-loknamahgroup-product-logo-min.png"
+                        alt="LNG Sanitary & Bathware Solutions Logo">
                 </a>
             </div>
-            
+
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="../../index.html">Home</a></li>
-                    <!-- <li class="dropdown">
-                        <a href="../../index.html#about">About</a>
-                    </li> -->
                     <li class="dropdown">
                         <a href="#products">Products <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="../sanitary/lng-sanitary-sanitary.html">Sanitary</a></li>
-                            <li><a href="../accessories/lng-sanitary-accessories.html">Bath Accessories</a></li>
-                            <li><a href="../shower/lng-sanitary-shower.html">Shower</a></li>
-                         </ul>
+                            <!-- <li><a href="../accessories/lng-sanitary-accessories.html">Bath Accessories</a></li> -->
+                            <!-- <li><a href="../shower/lng-sanitary-shower.html">Shower</a></li> -->
+                        </ul>
                     </li>
-                    <!-- <li><a href="#features">Features</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -74,72 +70,34 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Products Section -->
-        <section class="products-section">
+        <!-- Sanitaryware Section -->
+        <section id="sanitaryware" class="category-section">
             <div class="container">
-                <div class="section-title">
-                    <h2>Our Premium Sanitary Items</h2>
-                    <p>Discover our wide range of high-quality sanitary designed for both style and functionality</p>
+                <div class="category-header">
+                    <h2>Premium Sanitaryware</h2>
+                    <p>Discover our wide range of high-quality sanitaryware designed for both style and functionality
+                    </p>
                 </div>
-                
-                <!-- Filter Toggle Button -->
-                <div class="filter-toggle">
-                    <button class="toggle-filter-btn" id="toggleFilterBtn">
-                        <i class="fas fa-filter"></i> Show Filters
-                    </button>
-                </div>
-                
-                <!-- Filter Section -->
-                <div class="filter-section" id="filterSection">
-                    <div class="filter-row">
-                        <div class="filter-group">
-                            <label for="search">Search Products</label>
-                            <input type="text" id="search" placeholder="Enter product name...">
-                        </div>
-                        <div class="filter-group">
-                            <label for="category">Category</label>
-                            <select id="category">
-                                <!-- <option value="">All Categories</option>
-                                <option value="Kitchen">Kitchen</option>
-                                <option value="Bathroom">Bathroom</option>
-                                <option value="Wall Mounted">Wall Mounted</option>
-                                <option value="Sensor">Sensor</option> -->
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-row">
-                        <div class="filter-group">
-                            <label for="priceRange">Price Range</label>
-                            <div class="price-range">
-                                <input type="range" id="priceRange" min="0" max="1000000" step="100" value="1000000">
-                                <span id="priceValue">Up to ₹10,00000</span>
-                            </div>
-                        </div>
-                        <div class="filter-group">
-                            <label for="sortBy">Sort By</label>
-                            <select id="sortBy">
-                                <option value="default">Default</option>
-                                <option value="price-low">Price: Low to High</option>
-                                <option value="price-high">Price: High to Low</option>
-                                <option value="name-asc">Name: A to Z</option>
-                                <option value="name-desc">Name: Z to A</option>
-                                <option value="discount">Discount: High to Low</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-actions">
-                        <button class="filter-btn reset-filter" id="resetFilter">Reset</button>
-                        <button class="filter-btn apply-filter" id="applyFilter">Apply Filters</button>
-                    </div>
-                </div>
-                
-                <!-- Product Grid -->
-                <div class="product-grid" id="productGrid">
-                    <!-- Products will be dynamically inserted here -->
+
+                <!-- Categories Container -->
+                <div id="categoriesContainer">
+                    <!-- Categories will be dynamically generated here -->
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -159,12 +117,6 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <!-- <div class="footer-col">
-                    <h3>Products</h3>
-                    <ul class="footer-links">
-                        <li><a href="faucets.html" class="wash-basins-link">Faucets</a></li>
-                    </ul>
-                </div> -->
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> H No. 283, Bokajan Thana Road, Bokajan, Karbi Anglong, Assam - 782480</p>
@@ -173,8 +125,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>               © 2025 Lok Namah Group | <strong>LNG Sanitary</strong> & Bathware | <a href="https://www.loknamahgroup.com">www.loknamahgroup.com</a> | 
-    
+                <p>© 2025 Lok Namah Group | <strong>LNG Sanitary</strong> & Bathware | <a href="https://www.loknamahgroup.com">www.loknamahgroup.com</a> | 
                    <a href="https://www.loknamahgroup.com/index.html#products" title="Explore LNG Sanitary Products">LNG Sanitary</a> | 
                    <a href="../../lng-sanitary.html" title="LNG Products by Lok Namah Group">LNG Products</a>
                 </p>
@@ -183,6 +134,11 @@
     </footer>
 
     <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- WhatsApp Chat Button -->
     <a href="https://wa.me/919436000003" class="whatsapp-chat" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
      </a>
@@ -191,5 +147,6 @@
     <script src="./sanitary.js"></script>
 
     <script src="../product.js"></script>
+  
 </body>
 </html>
