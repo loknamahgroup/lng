@@ -1058,7 +1058,7 @@ header h1 {
 }
 
 .product-info {
-    padding: 20px;
+    padding: 0px;
 }
 
 .product-title {
@@ -1344,12 +1344,12 @@ header h1 {
 }
 
 .product-img {
-    height: 150px;
+    /* height: 150px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 .product-img img {
