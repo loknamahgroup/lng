@@ -198,13 +198,34 @@ function openProductModal(productId) {
             
             ${product.features ? `<div class="detail-item">
                 <span class="detail-label">Features:</span>
-                <span class="detail-value">${product.features}</span>
+                <span class="detail-value">${product.dimensions}</span>
             </div>` : ''}
             
-            ${product.installation ? `<div class="detail-item">
-                <span class="detail-label">Installation:</span>
-                <span class="detail-value">${product.installation}</span>
+            ${product?.details?.dimensions ? `<div class="detail-item">
+                <span class="detail-label">Dimensions:</span>
+                <span class="detail-value">${product.details.dimensions}</span>
             </div>` : ''}
+
+            ${product?.details?.trapType ? `<div class="detail-item">
+            <span class="detail-label">Trap Type:</span>
+            <span class="detail-value">${product.details.trapType}</span>
+        </div>` : ''}
+
+        ${product?.details?.flushingType ? `<div class="detail-item">
+        <span class="detail-label">Flushing Type:</span>
+        <span class="detail-value">${product.details.flushingType}</span>
+    </div>` : ''}
+
+    ${product?.details?.basinPrice ? `<div class="detail-item">
+    <span class="detail-label">Basin Price:</span>
+    <span class="detail-value">${product.details.basinPrice}</span>
+</div>` : ''}
+
+${product?.details?.pedestalPrice ? `<div class="detail-item">
+<span class="detail-label">Pedestal Price:</span>
+<span class="detail-value">${product.details.pedestalPrice}</span>
+</div>` : ''}
+
         </div>
         
         <button class="view-details-btn" style="margin-top: 30px;" onclick="window.open('https://wa.me/919436000003?text=Hi, I am interested in ${product.name} (${product.code})', '_blank')">
