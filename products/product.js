@@ -75,10 +75,11 @@
                     <div class="collection-header" data-category="${categorySlug}">
                         <div>
                             <h3>${category}</h3>
-                            <p>Explore our premium ${category} collection</p>
+                            <p>Explore our premium ${category.toLowerCase()} collection</p>
                         </div>
                         <div class="collection-toggle">
-                            <i class="fas fa-chevron-down"></i>
+                                <p style="color: blue;">Click Here</p>
+                            <i class="fas fa-chevron-down" "> </i>
                         </div>
                     </div>
                     <div class="collection-content" id="${categorySlug}-content">
